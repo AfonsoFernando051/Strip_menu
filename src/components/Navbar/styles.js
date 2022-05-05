@@ -32,12 +32,35 @@ position: absolute;
 }
 
 .dropdown-arrow{
+position: absolute;
+&::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: #fff;
 
+    top: -6.5px;
+    left: -8px;
+    border-radius: 4px;
+
+    transform: rotate(45deg);
+}
 }
 .dropdown-container{
 position: absolute;
+overflow: hidden;
+box-shadow: 0px 50px 100px rgba(50, 50, 93, 0.25);
+
+background: #fff;
+border-radius: 4px;
 }
 .dropdown-section{
 position: absolute;
 }
-`;
+.dropdown-background {
+    position: absolute;
+    bottom: 0;
+    background: #f6f9fc;
+    width: 100%;
+}
+`

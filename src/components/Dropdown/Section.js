@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { Context } from "./Provider";
 
 export function DropdownSection({ option }) {
-    const { updateOptionProps, cachedId } = useContext(Context);
+    const { cachedId } = useContext(Context);
 
-    const { id, optionDimensions, optionCenterX, contentDimensions } = option;
+    const { id, optionCenterX, contentDimensions } = option;
 
     const contentWidth = contentDimensions?.width || 0;
     const x = optionCenterX - contentWidth / 2;

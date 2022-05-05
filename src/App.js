@@ -9,7 +9,7 @@ function App() {
 
       <Layout>
         <Navbar />
-        <h1>RocketSeat</h1>
+
       </Layout>
 
       <GlobalStyles />
